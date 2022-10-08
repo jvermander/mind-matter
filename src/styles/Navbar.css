@@ -1,0 +1,57 @@
+.nav-ctn {
+  position: fixed;
+  width: 100%; /* Use % instead of vw to accommodate scroll bar */
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  opacity: var(--primary-opacity);
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 7.5rem;
+  height: auto;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+}
+
+.nav-list > * {
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; 
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-list > *::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.1rem;
+  background-color: var(--primary-color);
+  bottom: 0.25rem;
+  left: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.nav-list > *:hover {
+  color: var(--secondary-color);
+}
+
+.nav-list > *:hover::after {
+  width: 100%;
+  background-color: var(--secondary-color);
+}

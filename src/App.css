@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Comfortaa';
+  src: url("assets/fonts/comfortaa/Comfortaa-Light.ttf")
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-bg-color: black;
+  --primary-color: white;
+  --secondary-color: #60B0F4;
+  --primary-opacity: 0.65;
+  --primary-font: 'Comfortaa';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  height: 200vh;
+  width: 100%;
+  background-image: url("assets/pictures/cyberpunk.jpg");
+  background-size: 100vw;
+  background-color: var(--primary-bg-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0.75rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  -webkit-transition: all 1 ease;
+  -ms-transition: all 1 ease;
+  transition: all 1 ease;
 }

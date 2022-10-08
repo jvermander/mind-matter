@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Navbar from './components/Navbar'
+import logo from "assets/pictures/MM2.png"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div>
+        <Navbar>
+          <Navbar.Logo href="/" name="MindMatter Medical Logo" src={logo}/>
+          <Navbar.List>
+            <Navbar.ListDropdown name="Procedures"/>
+            <Navbar.ListLink name="Research"/>
+            <Navbar.ListLink name="Careers"/>
+            <Navbar.ListLink name="About"/>
+            <Navbar.ListLink name="Inquiries"/>
+          </Navbar.List>
+        </Navbar>
+      </div>
+  )
 }
 
-export default App;
+export default App

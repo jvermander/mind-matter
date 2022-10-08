@@ -1,6 +1,6 @@
 import './App.css'
 import Navbar from './components/Navbar'
-import logo from "assets/pictures/MM2.png"
+import logo from "assets/pictures/MM.png"
 
 function App() {
   return (

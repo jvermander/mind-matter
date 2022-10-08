@@ -6,7 +6,8 @@
 :root {
   --primary-bg-color: black;
   --primary-color: white;
-  --secondary-color: #60B0F4;
+  --secondary-color: #a3d4ff;
+  --tertiary-color : #2e2eff;
   --primary-opacity: 0.65;
   --primary-font: 'Comfortaa';
 }
@@ -29,16 +30,15 @@ body {
 }
 
 ::-webkit-scrollbar {
-  background: transparent;
   width: 0.75rem;
 }
 
 ::-webkit-scrollbar-track {
-  opacity: 0;
+  background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--secondary-color);
+  background-color: #2e2eff85;
   -webkit-transition: all 1 ease;
   -ms-transition: all 1 ease;
   transition: all 1 ease;

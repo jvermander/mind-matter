@@ -1,0 +1,39 @@
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-size: cover;
+}
+
+.carousel-section {
+  background-repeat: no-repeat;
+  background-image: var(--carousel-section-img);
+  background-color: rgb(24, 24, 39);
+  /* background-blend-mode: hard-light; */
+}
+
+/* .section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 0;
+  position: relative;
+} */
+
+/* .section::after {
+  content: '';
+  position: absolute;
+  background-image: inherit;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.section:nth-of-type(even)::after {
+  top: -100px;
+  -webkit-mask:linear-gradient(transparent ,#fff 50px);
+  mask:linear-gradient(transparent ,#fff 50px);
+} */

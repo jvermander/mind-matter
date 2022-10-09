@@ -15,7 +15,7 @@ function Navbar(props) {
 function Logo(props) {
   return (
       <a href={props.href}>
-        <img className="nav-logo" alt={props.alt} src={props.src} />
+        <img className="nav-logo" alt={props.alt} />
       </a>
   )
 }

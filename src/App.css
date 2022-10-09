@@ -6,10 +6,16 @@
 :root {
   --primary-bg-color: black;
   --primary-color: white;
-  --secondary-color: #a3d4ff;
+  --secondary-color: #48a3f1;
   --tertiary-color : #2e2eff;
-  --primary-opacity: 0.65;
+  --primary-opacity: 0.75;
   --primary-font: 'Comfortaa';
+
+  --nav-logo-img: url("assets/pictures/MM.png");
+  --carousel-section-img: url('assets/pictures/bg.png');
+  --carousel-item1-img: url('assets/pictures/medical.png');
+  --carousel-item2-img: url('assets/pictures/ai.png');
+  --carousel-item3-img: url('assets/pictures/ai2.png');
 }
 
 *, *::before, *::after {
@@ -19,13 +25,14 @@
 }
 
 body {
-  height: 200vh;
   width: 100%;
-  background-image: url("assets/pictures/cyberpunk.jpg");
-  background-size: 100vw;
+  height: 200vh;
+  /* background-image: url("assets/pictures/bg.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: var(--primary-bg-color);
   font-family: var(--primary-font);
-  font-size: 16px;
+  color: var(--primary-color);
   font-weight: bold;
 }
 

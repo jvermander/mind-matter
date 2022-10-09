@@ -1,23 +1,25 @@
 .nav-ctn {
   position: fixed;
+  top: 0;
   width: 100%; /* Use % instead of vw to accommodate scroll bar */
-  /* background-color: var(--primary-bg-color); */
   background-image: 
     linear-gradient(to right,
       var(--primary-bg-color),
       var(--primary-bg-color),
       var(--tertiary-color) 120%);
   color: var(--primary-color);
-  opacity: 0.80;
+  opacity: var(--primary-opacity);
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 2rem black;
+  z-index: 2;
 }
 
 .nav-logo {
+  content: var(--nav-logo-img);
   width: 9rem;
   height: auto;
 }

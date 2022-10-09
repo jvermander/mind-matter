@@ -30,6 +30,22 @@
   z-index: 0;
 }
 
+.carousel-item.enter-right {
+  
+}
+
+.carousel-item.enter-left {
+  
+}
+.carousel-item.exit-right {
+  
+}
+
+.carousel-item.exit-left {
+
+} 
+
+
 #carousel-item1 {
   background-image: var(--carousel-item1-img);
 }

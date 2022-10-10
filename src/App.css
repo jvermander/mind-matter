@@ -16,6 +16,7 @@
   --carousel-item1-img: url('assets/pictures/medical.png');
   --carousel-item2-img: url('assets/pictures/ai.png');
   --carousel-item3-img: url('assets/pictures/ai2.png');
+  --carousel-item4-img: url('assets/pictures/tech.png');
 }
 
 *, *::before, *::after {
@@ -34,6 +35,7 @@ body {
   font-family: var(--primary-font);
   color: var(--primary-color);
   font-weight: bold;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {

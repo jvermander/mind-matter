@@ -1,50 +1,26 @@
 .carousel-ctn {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 20rem;
 }
 
 .carousel-display {
+  height: 100%;
   width: 100%;
-  height: 20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 0 1rem black;
-  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 100%;
+  height: 100%;
 }
 
 .carousel-item {
-  width: 100%;
-  height: 100%;
+  flex: 0 0 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  visibility: hidden;
-  z-index: -1;
+  background-position: center center;
 }
-.carousel-item.selected {
-  visibility: visible;
-  z-index: 0;
-}
-
-.carousel-item.enter-right {
-  
-}
-
-.carousel-item.enter-left {
-  
-}
-.carousel-item.exit-right {
-  
-}
-
-.carousel-item.exit-left {
-
-} 
-
 
 #carousel-item1 {
   background-image: var(--carousel-item1-img);
@@ -52,6 +28,7 @@
 
 #carousel-item2 {
   background-image: var(--carousel-item2-img);
+
 }
 
 #carousel-item3 {
@@ -59,7 +36,11 @@
   background-position: left 75%;
 }
 
-.carousel-nav-btn.selected {
+#carousel-item4 {
+  background-image: var(--carousel-item4-img);
+}
+
+/* .carousel-nav-btn.selected {
   background-color: var(--secondary-color);
 }
 
@@ -80,4 +61,4 @@
 .carousel-nav-btn:hover {
   cursor: pointer;
 }
-
+ */

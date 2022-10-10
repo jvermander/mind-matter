@@ -21,6 +21,7 @@ function App() {
             <Carousel.CarouselItem id="carousel-item1"/>
             <Carousel.CarouselItem id="carousel-item2"/>
             <Carousel.CarouselItem id="carousel-item3"/>
+            <Carousel.CarouselItem id="carousel-item4"/>
           </Carousel>
         </Section>
       </div>
